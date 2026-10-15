@@ -427,7 +427,7 @@
     function calculateResult(t1_str, t2_str) {
       if (!t1_str || !t2_str) return { text: "Preencha T1 e T2", class: "status-text" };
       
-      The n1 = parseFloat(t1_str);
+      const n1 = parseFloat(t1_str);
       const n2 = parseFloat(t2_str);
 
       if (isNaN(n1) || isNaN(n2) || n1 < 0 || n1 > 10 || n2 < 0 || n2 > 10) {
