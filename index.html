@@ -427,7 +427,7 @@
     function calculateResult(t1_str, t2_str) {
       if (!t1_str || !t2_str) return { text: "Preencha T1 e T2", class: "status-text" };
       
-      const n1 = parseFloat(t1_str);
+      The n1 = parseFloat(t1_str);
       const n2 = parseFloat(t2_str);
 
       if (isNaN(n1) || isNaN(n2) || n1 < 0 || n1 > 10 || n2 < 0 || n2 > 10) {
@@ -501,5 +501,8 @@
     function closeModal() { document.getElementById('guideModal').classList.remove('active'); }
     function closeModalOutside(event) { if (event.target === document.getElementById('guideModal')) closeModal(); }
   </script>
+
+  <!-- GoatCounter - Contador de Acessos Oculto -->
+  <script data-goatcounter="https://calcularnotasrs.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
